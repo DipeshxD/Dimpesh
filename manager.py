@@ -21,9 +21,8 @@ except ImportError:
     os.system('pip install requests')
 
 def banner():
-
-b = [
-      
+    # fancy logo
+    b = [
       '██████╗░███████╗██╗░░██╗',
       '██╔══██╗██╔════╝╚██╗██╔╝',
       '██████╔╝█████╗░░░╚███╔╝░',
