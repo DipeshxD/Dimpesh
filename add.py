@@ -12,7 +12,7 @@ import random
 from colorama import init, Fore
 import os
 import pickle
-
+import pyfiglet
 
 init()
 
@@ -33,18 +33,8 @@ plus = w + '[' + lg + '+' + w + ']' + rs
 minus = w + '[' + lg + '-' + w + ']' + rs
 
 def banner():
-    # fancy logo
-    b = [   
-      '██████╗░███████╗██╗░░██╗',
-      '██╔══██╗██╔════╝╚██╗██╔╝',
-      '██████╔╝█████╗░░░╚███╔╝░',
-      '██╔══██╗██╔══╝░░░██╔██╗░',
-      '██║░░██║███████╗██╔╝╚██╗',
-      '╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝',
-    ]
-    for char in b:
-        print(f'{random.choice(colors)}{char}{rs}')
-    #print('=============Sexy Bitch==============')
+    name = pyfiglet.figlet_format("DIPESHXD")
+    print(name)
     print(f'{lg}   Version: {w}1.6{lg} | Author: {w}DipeshxD{rs}\n')
 
 
