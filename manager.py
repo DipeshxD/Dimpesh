@@ -3,6 +3,7 @@ from telethon.errors.rpcerrorlist import PhoneNumberBannedError
 import pickle, os
 from colorama import init, Fore
 from time import sleep
+import pyfiglet
 
 init()
 
@@ -21,18 +22,8 @@ except ImportError:
     os.system('pip install requests')
 
 def banner():
-    # fancy logo
-    b = [
-      '██████╗░███████╗██╗░░██╗',
-      '██╔══██╗██╔════╝╚██╗██╔╝',
-      '██████╔╝█████╗░░░╚███╔╝░',
-      '██╔══██╗██╔══╝░░░██╔██╗░',
-      '██║░░██║███████╗██╔╝╚██╗',
-      '╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝',
-    ]
-    for char in b:
-        print(f'{random.choice(colors)}{char}{rs}')
-    #print('=============SON OF KING==============')
+    name = pyfiglet.figlet_format("DIPESHXD")
+    print(name)
     print(f'{lg}   Version: {w}1.6{lg} | Author: {w}DipeshxD{rs}\n')
 
 
@@ -142,8 +133,8 @@ while True:
         # Thanks to github.com/th3unkn0n for the snippet below
         print(f'\n{lg}[i] Checking for updates...')
         try:
-            # https://raw.githubusercontent.com/DipeshxD/RexScrapper/DipeshxD/version.txt
-            version = requests.get('https://raw.githubusercontent.com/DipeshxD/RexScrapper/DipeshxD/version.txt')
+            # https://raw.githubusercontent.com/DipeshxD/Dimpesh/DipeshxD/version.txt
+            version = requests.get('https://raw.githubusercontent.com/DipeshxD/Dimpesh/DipeshxD/version.txt')
         except:
             print(f'{r} You are not connected to the internet')
             print(f'{r} Please connect to the internet and retry')
@@ -159,8 +150,8 @@ while True:
                     os.system('rm add.py')
                     os.system('rm manager.py')
                 #os.system('del scraper.py')
-                os.system('curl -l -O https://raw.githubusercontent.com/DipeshxD/RexScrapper/DipeshxD/version.txt')
-                os.system('curl -l -O https://raw.githubusercontent.com/DipeshxD/RexScrapper/DipeshxD/version.txt')
+                os.system('curl -l -O https://raw.githubusercontent.com/DipeshxD/Dimpesh/DipeshxD/version.txt')
+                os.system('curl -l -O https://raw.githubusercontent.com/DipeshxD/Dimpesh/DipeshxD/version.txt')
                 print(f'{lg}[*] Updated to version: {version.text}')
                 input('Press enter to exit...')
                 exit()
